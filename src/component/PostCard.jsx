@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/post-card.css';
+import './style/post-card.css';
 
 export default function PostCard({ post }) {
     return (
