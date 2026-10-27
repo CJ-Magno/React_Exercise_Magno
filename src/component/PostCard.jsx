@@ -1,0 +1,22 @@
+import React from 'react';
+import './styles/post-card.css';
+
+export default function PostCard({ post }) {
+    return (
+        <div className="post-item>">
+            <div className="post-content">
+                <div className="post-header">
+                    <span className="post-usernamw">
+                        {post.user?.username || 'Guest'}
+                    </span>
+
+                    <small className="post-timestamp">
+                        {post.created_at ? new Date(post.created_at).toLocaleString() : 'Just now'}
+                        </small>
+                    </div>
+
+                    <p className="post-message">{post.message}</p>
+            </div>
+        </div>
+    );
+}
