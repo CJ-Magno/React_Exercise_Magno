@@ -7,7 +7,7 @@ export default function PostCard({ post }) {
             <div className="post-content">
                 <div className="post-header">
                     <span className="post-username">
-                        {post.user?.username || 'Guest'}
+                        {post.user?.username || 'Guest User'}
                     </span>
 
                     <small className="post-timestamp">
