@@ -3,10 +3,10 @@ import './style/post-card.css';
 
 export default function PostCard({ post }) {
     return (
-        <div className="post-item>">
+        <div className="post-item">
             <div className="post-content">
                 <div className="post-header">
-                    <span className="post-usernamw">
+                    <span className="post-username">
                         {post.user?.username || 'Guest'}
                     </span>
 
